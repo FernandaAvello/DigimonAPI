@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Pixel Digivolve';
+  src: url('../fonts/pixel_digivolve/Pixel\ Digivolve.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Pixel Digivolve Italic';
+  src: url('../fonts/pixel_digivolve/Pixel\ Digivolve\ Italic.otf') format("opentype");
+}
+.banner {
+  background-image: url('./../img/digimon-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}
+.navbar {
+  background-color: #2598ff;
+}
+#main-content {
+  padding: 20px 40px;
+}
+h5 {
+  font-family: 'Pixel Digivolve';
+  font-size: 20px;
+}
+.level {
+  font-family: 'Pixel Digivolve Italic';
+  font-size: 14px;
+}
+#error-msg {
+  font-family: 'Pixel Digivolve';
+  margin-top: 20px;
+  text-align: center;
+}
+#searchLevel {
+  display: inline-block;
+}

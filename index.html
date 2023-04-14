@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimon</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <header class="banner"></header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/digimon-logo.png" alt="logo" width="200" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center mt-3" id="navbarSupportedContent">
+          <form class="d-flex w-50">
+            <input class="form-control me-2" type="search" placeholder="Busca el digimon..." aria-label="Search" id="search-result">
+            <button class="btn btn-warning" onclick="searchDigimon()">Buscar</button>
+            <button class="btn btn-outline-light ms-2" onclick="resetList()">Limpiar</button>
+          </form>
+        <!-- <div class="row ms-5">
+          <select class="d-flex form-select" aria-label="Default select example">
+            <option selected>Filtra por Level</option>
+            <option value="1">Fresh</option>
+            <option value="2">In Training</option>
+            <option value="3">Rookie</option>
+            <option value="4">Champion</option>
+            <option value="5">Ultimate</option>
+            <option value="6">Mega</option>
+            <option value="7">Armor</option>
+          </select>
+          <button class="btn btn-warning" id="searchLevel">
+          <span class="btn-label"><i class="fa fa-search"></i></span>
+          </button>
+        </div>
+        </div>
+      </div> -->
+    </nav>
+  <div class="container-fluid" id="main-content">
+    <h3 id="error-msg"></h3>
+    <div class="row" id="digimon-layout"></div>
+  </div>
+  <footer></footer>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
