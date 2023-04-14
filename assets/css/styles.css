@@ -35,3 +35,17 @@ h5 {
 #searchLevel {
   display: inline-block;
 }
+.footer {
+  background-image: url('./../img/background-footer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.develop {
+  color: #fff;
+  font-family: 'Pixel Digivolve';
+}
