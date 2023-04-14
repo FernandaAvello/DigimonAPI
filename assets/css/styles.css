@@ -49,11 +49,19 @@ h5 {
   color: #fff;
   font-family: 'Pixel Digivolve';
 }
-@media (max-width: 768px) {
-  #search-form {
-    flex-wrap: wrap;
+@media (min-width: 993px){
+  #selector-div {
+    margin-left: 40px;
   }
+}
+@media (max-width: 992px) {
   .button-search, .button-reset {
     margin-top: 10px;
+  }
+  #selector-div {
+    display: flex;
+    margin-left: 0;
+    margin-top: 20px;
+    width: 50%;
   }
 }
