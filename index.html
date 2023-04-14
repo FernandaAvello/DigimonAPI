@@ -24,28 +24,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center mt-3" id="navbarSupportedContent">
-          <form class="d-flex w-50">
+          <form class="d-flex w-50" id="search-form">
             <input class="form-control me-2" type="search" placeholder="Busca el digimon..." aria-label="Search" id="search-result">
-            <button class="btn btn-warning" onclick="searchDigimon()">Buscar</button>
-            <button class="btn btn-outline-light ms-2" onclick="resetList()">Limpiar</button>
+            <button class="btn btn-warning button-search" onclick="searchDigimon()">Buscar</button>
+            <button class="btn btn-outline-light ms-2 button-reset" onclick="resetList()">Limpiar</button>
           </form>
-        <!-- <div class="row ms-5">
-          <select class="d-flex form-select" aria-label="Default select example">
-            <option selected>Filtra por Level</option>
-            <option value="1">Fresh</option>
-            <option value="2">In Training</option>
-            <option value="3">Rookie</option>
-            <option value="4">Champion</option>
-            <option value="5">Ultimate</option>
-            <option value="6">Mega</option>
-            <option value="7">Armor</option>
+        <div class="row ms-5">
+          <select class="d-flex form-select" aria-label="Default select example" id="level-selector" onchange="levelSelection(this)">
+            <option selected value="all">Filtra por Level</option>
+            <option value="fresh">Fresh</option>
+            <option value="training">Training</option>
+            <option value="intraining">In Training</option>
+            <option value="rookie">Rookie</option>
+            <option value="champion">Champion</option>
+            <option value="ultimate">Ultimate</option>
+            <option value="mega">Mega</option>
+            <option value="armor">Armor</option>
           </select>
-          <button class="btn btn-warning" id="searchLevel">
-          <span class="btn-label"><i class="fa fa-search"></i></span>
-          </button>
         </div>
         </div>
-      </div> -->
+      </div>
     </nav>
   <div class="container-fluid" id="main-content">
     <h3 id="error-msg"></h3>

@@ -1,11 +1,11 @@
 // Consumir la ApiRest
 function getAllDigimon(paramName = '', paramLevel = '') {
+  deleteAllDigimon()
   let url = 'https://digimon-api.vercel.app/api/digimon'
   // Si ingreso un parámetro de búsqueda en el buscador
   if (paramName !== '') {
     url = `https://digimon-api.vercel.app/api/digimon/name/${paramName}`
     // Elimino la lista de todos los digimon, y crea sólo el que busqué
-    deleteAllDigimon()
   }
   if (paramLevel !== '') {
     url = `https://digimon-api.vercel.app/api/digimon/level/${paramLevel}`
@@ -121,4 +121,9 @@ function deleteAllDigimon() {
   while (row.firstChild) {
     row.removeChild(row.firstChild);
   }
+}
+
+function levelSelection (select) {
+  let levelSelected = document.getElementById('level-selector').value;
+  getAllDigimon('', levelSelected)
 }

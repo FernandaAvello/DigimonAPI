@@ -49,3 +49,11 @@ h5 {
   color: #fff;
   font-family: 'Pixel Digivolve';
 }
+@media (max-width: 768px) {
+  #search-form {
+    flex-wrap: wrap;
+  }
+  .button-search, .button-reset {
+    margin-top: 10px;
+  }
+}
